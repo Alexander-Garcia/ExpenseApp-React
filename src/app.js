@@ -1,1 +1,13 @@
-console.log('app.js is running better go catch it'); 
+import React from 'react'; 
+import ReactDOM from 'react-dom'; 
+
+class Test extends React.Component {
+    render() {
+        return (
+            <p>this is a test</p>
+        );
+    }
+}
+ReactDOM.render(
+    <Test />,
+    document.getElementById('app')); 
