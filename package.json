@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "react": "^16.9.0",
+    "reactdom": "^2.0.0"
+  },
+  "name": "Expense-App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alexander-Garcia/Expense-App.git",
+  "author": "Alexander <adgbq2@mail.missouri.edu>",
+  "license": "MIT"
+}
