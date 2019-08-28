@@ -1,12 +1,30 @@
 {
-  "dependencies": {
-    "react": "^16.9.0",
-    "reactdom": "^2.0.0"
-  },
   "name": "Expense-App",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Alexander-Garcia/Expense-App.git",
   "author": "Alexander <adgbq2@mail.missouri.edu>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.3",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
+  }
 }
