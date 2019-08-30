@@ -1,5 +1,5 @@
 {
-  "name": "Expense-App",
+  "name": "expense-app",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Alexander-Garcia/Expense-App.git",
@@ -18,8 +18,12 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^3.2.0",
     "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-dev-server": "^3.8.0"
   },

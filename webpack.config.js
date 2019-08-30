@@ -22,7 +22,8 @@ module.exports = {
     },
     devtool: 'cheap-module-eval-source-map',
     devServer: {
-        contentBase: path.resolve(__dirname, 'public')
+        contentBase: path.resolve(__dirname, 'public'),
+        historyApiFallback: true
     }
 };
 
@@ -36,3 +37,6 @@ module.exports = {
     Summary: every time we see a .js file it needs to run through babel. 
     To tell webpack we need to set this up create a separate config file for babel. Call is .babelrc
 */
+
+/* We want to server up index.html and let React Router render the screen. We need to tell dev server what to do when getting 404
+this is where historyApiFallback comes in play. Says we are going to be handling routing via our CLIENT side code. */

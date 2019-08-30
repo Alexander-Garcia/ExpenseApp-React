@@ -1,13 +1,12 @@
-import React from 'react'; 
-import ReactDOM from 'react-dom'; 
+import React from 'react';
+import ReactDOM from 'react-dom';
+import AppRouter from './routers/AppRouter'; 
+import 'normalize.css/normalize.css'
+import './styles/styles.scss'
 
-class Test extends React.Component {
-    render() {
-        return (
-            <p>this is a test</p>
-        );
-    }
-}
+
+
+
 ReactDOM.render(
-    <Test />,
+    <AppRouter />,
     document.getElementById('app')); 
