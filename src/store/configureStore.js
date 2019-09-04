@@ -13,5 +13,4 @@ export default () => {
     return store
 }
 
-// create new store
 
