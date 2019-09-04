@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
@@ -14,14 +15,20 @@ const store = configureStore();
 store.subscribe(() => {
     const state = store.getState(); 
     const visible = getVisibleExpenses(state.expenses, state.filters); 
-    console.log(visible); 
+    //console.log(visible); 
 })
 
 
 
-store.dispatch(addExpense({ description: 'Water Bill' }))
+store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }))
 store.dispatch(addExpense({ description: 'Gas Bill' }))
 store.dispatch(setTextFilter('water'))
+
+
+
+setTimeout(() => {
+    store.dispatch(setTextFilter('bill'));
+}, 3000)
 
 
 // const state = store.getState();
@@ -36,6 +43,12 @@ store.dispatch(setTextFilter('water'))
 // use getVisibleExpenses function to print visibleones 
 
 
+const jsx = (
+    <Provider store={store}>
+        <AppRouter />
+    </Provider>
+)
+
 ReactDOM.render(
-    <AppRouter />,
+    jsx,
     document.getElementById('app')); 
