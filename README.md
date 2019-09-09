@@ -1,4 +1,5 @@
 # Expense-App
+This application was created by following a React and Redux class offered by Udemy. 
 ## Running the app
 To run the app on local host clone the repository, navigate to the directory in terminal, and type `yarn run dev-server` 
 ## Testing the app
