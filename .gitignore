@@ -1,7 +1,4 @@
 .DS_Store
+public/dist/
 node_modules
-public/bundle.js
 yarn-error.log*
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
