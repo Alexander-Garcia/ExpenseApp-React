@@ -4,5 +4,6 @@ exports[`should render ExpenseDashboardPage 1`] = `
 <div>
   <[object Object] />
   <[object Object] />
+  <[object Object] />
 </div>
 `;
