@@ -2,7 +2,3 @@
 public/dist/
 node_modules
 yarn-error.log*
-<<<<<<< HEAD
-=======
-public/dist/
->>>>>>> feature/DeployingApps
