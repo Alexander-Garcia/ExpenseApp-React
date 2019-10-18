@@ -14,21 +14,45 @@ var firebaseConfig = {
 
   const database = firebase.database()
 
-  database.ref().set({
-      name: 'Alexander Garcia',
-      age: 28,
-      isSingle: true,
-      location: {
-          city: 'Des Moines',
-          country: 'United States'
-      }
-  })
 
-  database.ref('attributes').set({
-      height: 68,
-      weight: 150
-  })
+  export { firebase, database as default } 
 
-  // attributes 
-  //    height
-  //    weight
+
+
+//   database.ref().set({
+//       name: 'Alexander Garcia',
+//       age: 28,
+//       isSingle: false,
+//       location: {
+//           city: 'Des Moines',
+//           country: 'United States'
+//       }
+//   }).then(() => {
+//       console.log('data is saved')
+//   }).catch((e) => {
+//     console.log('This failed' , e)
+//   })
+
+//   database.ref('attributes').set({
+//       height: 68,
+//       weight: 150
+//   }).then(() => {
+//       console.log('second set call worked')
+//   }).catch((e) => {
+//     console.log('things didnt work', e)
+//   })
+
+//     // equivalent to calling remove()
+// //   database.ref('isSingle').set(null)
+
+// //   database.ref('age').set(27)
+// //   database.ref('location/city').set('Wentzville')
+
+
+// //   database.ref()
+// //   .remove()
+// //   .then(() => {
+// //     console.log('data was removed')
+// //   }).catch((e) => {
+// //     console.log('data wasnt removed' , e )
+// //   })

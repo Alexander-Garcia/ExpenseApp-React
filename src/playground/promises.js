@@ -1,6 +1,10 @@
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve('this is my resolved data')
+        // resolve({
+        //     name: 'Stuff',
+        //     age: 26
+        // })
+        reject('Something went wrong!')
     }, 5000)
 })
 
