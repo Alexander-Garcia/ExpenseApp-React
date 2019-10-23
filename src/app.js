@@ -21,9 +21,9 @@ store.subscribe(() => {
 
 
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }))
-store.dispatch(addExpense({ description: 'Gas Bill' , createdAt: 1000 }))
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }))
+store.dispatch(addExpense({ description: 'Water Bill', amount: 4500, id: 1234 }))
+store.dispatch(addExpense({ description: 'Gas Bill' , createdAt: 1000, id: 2345 }))
+store.dispatch(addExpense({ description: 'Rent', amount: 109500, id: 987 }))
 
 
 
