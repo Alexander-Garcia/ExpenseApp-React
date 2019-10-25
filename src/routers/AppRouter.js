@@ -6,7 +6,7 @@ import EditExpensePage from '../components/EditExpensePage';
 import {ExpenseDashboardPage} from '../components/ExpenseDashboardPage'; 
 import {HelpPage} from '../components/HelpPage'; 
 import {NotFoundPage} from '../components/NotFoundPage'; 
-import { LoginPage } from '../components/LoginPage'
+import LoginPage from '../components/LoginPage'
 /*
 
 Path of "/" is the root 'landing' page
