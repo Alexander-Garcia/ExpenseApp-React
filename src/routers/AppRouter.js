@@ -1,7 +1,8 @@
 import React from 'react'; 
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { Router, Route, Switch} from 'react-router-dom';
 import Header from '../components/Header'; 
 import AddExpensePage from '../components/AddExpensePage'; 
+import { createBrowserHistory } from 'history'
 import EditExpensePage from '../components/EditExpensePage'; 
 import {ExpenseDashboardPage} from '../components/ExpenseDashboardPage'; 
 import {HelpPage} from '../components/HelpPage'; 
@@ -21,8 +22,11 @@ placing the :id after the path such as /edit/:id allows for dynamic loading. So 
 
 
 */
+
+export const history = createBrowserHistory()
+
 const AppRouter = () => (
-    <BrowserRouter>
+    <Router history={history}>
         <div>
             <Header />
             <Switch>
@@ -34,7 +38,7 @@ const AppRouter = () => (
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 
 )
 
