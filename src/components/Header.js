@@ -5,16 +5,20 @@ otherwise it will be active by default
 
 */
 import React from 'react'; 
-import {NavLink} from 'react-router-dom'; 
+import {Link} from 'react-router-dom'; 
 import { connect } from 'react-redux'
 import { startLogout } from '../actions/auth'
 
 export const Header = ({ startLogout }) => (
-    <header>
-        <h1>Expensify me Cap'n</h1>
-        <NavLink to="/dashboard" activeClassName="is-active" >ET Phone Home</NavLink>
-        <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
+    <header className="header">
+    <div className="content-container">
+    <div className="header__content">
+        <Link className="header__title" to="/dashboard" >
+            <h1>Expensify me Cap'n</h1>
+        </Link>
         <button onClick={startLogout}>Logout</button>
+        </div>
+        </div>
     </header>
 )
 
