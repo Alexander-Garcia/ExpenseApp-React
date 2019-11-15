@@ -7,12 +7,14 @@ exports[`should render ExpenseForm correclty 1`] = `
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -109,6 +111,7 @@ exports[`should render ExpenseForm correclty 1`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -127,12 +130,14 @@ exports[`should render error for invalid form submission 1`] = `
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -229,6 +234,7 @@ exports[`should render error for invalid form submission 1`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -250,12 +256,14 @@ exports[`should render error for invalid form submission 2`] = `
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value=""
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -352,6 +360,7 @@ exports[`should render error for invalid form submission 2`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
@@ -370,12 +379,14 @@ exports[`should render expense form with expense data 1`] = `
   >
     <input
       autoFocus={true}
+      className="text-input"
       onChange={[Function]}
       placeholder="Description"
       type="text"
       value="Rent"
     />
     <input
+      className="text-input"
       onChange={[Function]}
       placeholder="Amount"
       type="text"
@@ -472,6 +483,7 @@ exports[`should render expense form with expense data 1`] = `
       withPortal={false}
     />
     <textarea
+      className="textarea"
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
       value=""
