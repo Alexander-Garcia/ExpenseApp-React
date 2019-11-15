@@ -6,6 +6,7 @@ import database from '../firebase/firebase'
     action generator returns an object
     component dispatches object
     redux store changes
+    read up on it
 
     component calls action generator 
     action generator returns function
@@ -14,6 +15,7 @@ import database from '../firebase/firebase'
 */
 
 //     ADD_EXPENSE
+
 export const addExpense = (expense) => ({
     type: 'ADD_EXPENSE',
     expense
